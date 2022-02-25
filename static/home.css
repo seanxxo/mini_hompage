@@ -1,0 +1,74 @@
+main .home {
+  overflow: hidden;
+}
+
+.home > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.home > div:first-child {
+  margin-bottom: 2rem;
+}
+
+.news div {
+  display: flex;
+}
+
+.news ul {
+  flex: 1;
+}
+
+.news li {
+  margin-bottom: 0.3rem;
+}
+
+.board {
+  background-color: black;
+  border-radius: 3px;
+  margin: 0 6px;
+  color: white;
+  padding: 0.15em;
+  font-size: 0.8em;
+  vertical-align: 0.1em;
+}
+
+.board1 {
+  background-color: var(--color-point-pink);
+}
+
+.board2 {
+  background-color: var(--color-point-red);
+}
+
+.news ul:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.news ul:last-child > * {
+  flex: 50%;
+  border-bottom: 2px dashed rgb(209, 209, 209);
+}
+
+.news ul:last-child span {
+  color: var(--color-main-darker);
+  filter: var(--filter-darker);
+  font-weight: bolder;
+  font-size: 90%;
+}
+
+.miniroom > div {
+  display: flex;
+  border: 1px solid var(--color-line-soft);
+  background-image: var(--img-default-minimi);
+  background-position: center;
+  background-size: 100%;
+  background-color: var(--color-main);
+  background-blend-mode: lighten;
+}
+
+.miniroom {
+  overflow: hidden;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>2022 MINI HOMEPAGE</title>
+    <script
+      src="https://kit.fontawesome.com/85583695d8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="static/layout.css" />
+    <link rel="stylesheet" href="static/init.css" />
+    <link rel="stylesheet" href="static/home.css" />
+    <link rel="stylesheet" href="static/diary.css" />
+    <link rel="stylesheet" href="static/photo.css" />
+    <link rel="stylesheet" href="static/guestbook.css" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <div class="bookcover">
+      <div class="bookdot">
+        <div class="page">
+          <header>
+            <div class="text">
+              <div class="counter">
+                TODAY <span class="today_count">0</span> ｜ TOTAL 7
+              </div>
+            </div>
+            <div class="content">
+              <div>
+                <div class="img_wrap">
+                  <img
+                    src="static/images/default_profile.png"
+                    alt="빈 프로필 사진"
+                  />
+                </div>
+                <div>
+                  flex 만으로 고정된 레이아웃을 짜고 싶었는데 내용물이 자꾸
+                  넘쳐나서 힘들었던 14일
+                </div>
+              </div>
+              <div>
+                <div class="name">이름</div>
+                <div class="wave">
+                  <button><span>파도타기</span><span>▽</span></button>
+                  <div>
+                    <a href="#">코뮤니티로 가기</a>
+                    <a href="#">인스타그램으로 가기</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <main>
+            <div class="text">
+              <h1>홈피이름</h1>
+              <a herf="#">https://nnn/mmm</a>
+            </div>
+          </main>
+          <nav>
+            <a href="#" class="home" onclick="handleClick(this.className)"
+              >홈</a
+            >
+            <a href="#" class="diary" onclick="handleClick(this.className)"
+              >다이어리</a
+            >
+            <a href="#" class="photo" onclick="handleClick(this.className)"
+              >사진첩</a
+            >
+            <a href="#" class="guestbook" onclick="handleClick(this.className)"
+              >방명록</a
+            >
+          </nav>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/getSecret.js"></script>
+  <script src="js/getContent.js"></script>
+</html>

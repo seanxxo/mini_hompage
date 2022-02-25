@@ -1,0 +1,91 @@
+main .photo {
+  overflow: scroll;
+}
+
+.photo h4 {
+  background-color: var(--color-main);
+  padding: 1rem;
+}
+
+.photo .img_wrap {
+  margin: 1rem 0;
+}
+
+.photo li {
+  margin-bottom: 4rem;
+}
+
+/* 이하 그냥 이미지 장난 */
+
+.photo img {
+  width: 200px;
+}
+
+.photo .img_wrap {
+  text-align: center;
+}
+
+.photo li:first-child .img_wrap::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-image: var(--img-default-minimi);
+  background-position: 80% 30%;
+  background-size: 90%;
+  filter: contrast(50%) blur(3px);
+}
+
+.photo li:first-child .img_wrap {
+  position: relative;
+}
+
+.photo li:nth-child(2) .img_wrap::before {
+  z-index: 0;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-image: var(--img-default-minimi);
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: 20%;
+  background-blend-mode: color-burn;
+  background-color: var(--color-point-pink);
+  filter: brightness(130%);
+}
+
+.photo li:nth-child(2) .img_wrap {
+  position: relative;
+}
+
+.photo li:nth-child(2) img {
+  z-index: 2;
+  position: relative;
+}
+
+.photo li:nth-child(3) .img_wrap::before {
+  z-index: 0;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-image: var(--img-default-minimi);
+  background-position: 105% 40%;
+  background-size: 350%;
+  background-color: var(--color-point-pink);
+  background-blend-mode: hue;
+}
+
+.photo li:nth-child(3) .img_wrap {
+  position: relative;
+}
+
+.photo li:nth-child(3) img {
+  object-fit: fill;
+  z-index: 2;
+  position: relative;
+}

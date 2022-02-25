@@ -1,0 +1,85 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable/pretendardvariable.css");
+
+:root {
+  --img-default-minimi: url("images/default_minimi.gif");
+  --color-main: rgb(227, 240, 239);
+  --color-main-darker: rgb(195, 224, 216);
+  --color-line-solid: rgb(112, 112, 112);
+  --color-line-soft: rgb(200, 200, 200);
+  --color-white: rgb(255, 254, 251);
+  --color-gray: rgb(246, 246, 246);
+  --color-point-red: rgb(207, 4, 4);
+  --color-point-pink: rgb(254, 158, 158);
+  --color-point-yellow: rgb(253, 234, 0);
+  --filter-darker: brightness(75%) saturate(200%);
+}
+
+* {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
+  box-sizing: border-box;
+  color: rgb(20, 20, 20);
+  line-height: 1rem;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(237, 237, 237);
+}
+
+hr,
+h1,
+h3,
+h4,
+ul,
+ol,
+li,
+button,
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+i {
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li,
+ol {
+  list-style: none;
+}
+
+hr {
+  border-style: none;
+  border-bottom: solid 1px var(--color-line-soft);
+  margin: 0.3rem 0;
+}
+
+h3 {
+  font-weight: bolder;
+  color: var(--color-main-darker);
+  filter: brightness(75%) saturate(200%);
+  font-size: 1.2rem;
+}
+
+.img_wrap {
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

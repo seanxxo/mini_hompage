@@ -1,0 +1,98 @@
+.diary {
+  overflow: hidden;
+}
+
+.diary ul {
+  overflow-y: scroll;
+}
+
+.calendar,
+.diary > ul > li,
+.diary > ul > button {
+  border: 1px solid var(--color-line-soft);
+  padding: 2%;
+  margin-bottom: 2rem;
+}
+
+.calendar,
+.calendar div,
+.calendar ol {
+  display: flex;
+}
+
+.calendar div,
+.calendar ol {
+  flex-wrap: wrap;
+}
+
+.calendar div {
+  justify-content: center;
+  flex-basis: 13%;
+}
+
+.calendar ol {
+  flex: 1;
+  counter-reset: list-number;
+}
+
+.calendar li {
+  flex-basis: 1.4rem;
+  text-align: center;
+}
+
+.calendar li::before {
+  counter-increment: list-number;
+  content: counter(list-number);
+}
+
+.calendar li:nth-child(7n + 5)::before {
+  color: var(--color-point-pink);
+}
+
+.calendar li:nth-child(7n + 6)::before {
+  color: var(--color-point-red);
+}
+
+.diary > ul > li {
+  padding: 1.5rem;
+}
+
+.diary > ul > li > div:first-child {
+  font-weight: bolder;
+  color: var(--color-main-darker);
+  filter: brightness(75%) saturate(200%);
+}
+
+.diary > ul > li > div:last-child {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.diary > ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.diary > ul > * {
+  width: 100%;
+}
+
+.diary > ul > button {
+  width: 40%;
+  border: none;
+  background-color: transparent;
+  color: transparent;
+
+  transition: 1000ms cubic-bezier(0.68, -0.55, 0.27, 1.55) all;
+}
+
+.diary > ul > button:hover {
+  background-color: var(--color-point-red);
+  color: #fff;
+  transition: 1000ms ease-in all;
+}
+
+.diary > ul > li:last-child {
+  display: none;
+}
